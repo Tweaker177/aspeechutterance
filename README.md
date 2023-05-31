@@ -9,3 +9,7 @@ It works inside Terminal as well as VSCode and other Terminal / Shell environeme
 [![i0S_tweak3r's GitHub stats](https://github-readme-stats.vercel.app/api?username=tweaker177)](https://github.com/tweaker177/github-readme-stats)
 
 If this helped you learn how to use Apple's free text to speech framework, for both iOS and MacOS, please consider leaving a star, updating the string to a variable string to make the output more interesting, and don't forget to give a star.
+
+
+Note: if you would like for this to build a deb instead, to use on jailbroken iOS environments on iOS 16, change the "macos" to "iphoneos" in the makefile, and use "UIKit/UIKit.h instead of <AppKit/AppKit.h>
+Also, add ASPEECHUTTTERANCE_CODESIGN_FLAGS = -sEntitlements.plist to the makefile and it should work.  Have only tested on Mac OS though.
